@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.9.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.6, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="assets/images/raidar-meta.png">
+  <meta property="og:image" content="assets/images/raidar-meta.png">
+  <meta name="twitter:title" content="Image Segmentation RAIDAR">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-128x109.png" type="image/x-icon">
+  <meta name="description" content="Portfolio:
+I am Bhushan. – a robotics graduate student currently pursuing my master's degree at Georgia Tech! 🐝
+This is a short overview of my work training an image segmentation model RAIDAR traffic images dataset">
+  
+  
+  <title>Image Segmentation RAIDAR</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-tVNITGqSUe" once="menu" id="menu2-26">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-7" href="index.html">Bhushan Pawaskar<br></a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle display-4" href="about.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a><div class="dropdown-menu" aria-labelledby="dropdown-613"><a class="text-black text-primary dropdown-item display-4" href="about.html#header11-l">Intro</a><a class="text-black text-primary dropdown-item display-4" href="about.html#pricing2-w">Skills</a><a class="text-black text-primary dropdown-item display-4" href="about.html#timeline3-s">Education</a></div></li><li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle show display-4" href="projects.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects</a><div class="dropdown-menu show" aria-labelledby="dropdown-358" data-bs-popper="none"><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-15">Computer Vision</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-16">Control &amp; Planning</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider04-14">Live Demos</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-17">Mechanical</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-10">Miscellaneous</a></div></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNITGK1xV mbr-parallax-background" id="article04-27">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/imgseg-cover-1036x501.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Introduction</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">To perceive its environment, an autonomous vehicle relies on advanced sensors like lidars and cameras, which generate lots of raw data. However, this data must undergo extensive processing to derive meaningful semantic and spatial information. Existing <strong>image segmentation models perform well under clear conditions</strong> but severe weather degrades the quality of image data reducing their performance.
+<br><br>To counter the distortion of images, real-time and <strong>post processing techniques have been used to mitigate the effect of severe weather on these images</strong> without altering the scene. Additionally, ensembling multiple deep learning models has been shown to improve the accuracy of object detection in unfavorable weather conditions.
+<br>
+<br></p>
+					<div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-7" href="https://sir-muel.github.io/7641group11.github.io/" target="_blank"><span class="mbri-browse mbr-iconfont mbr-iconfont-btn"></span>Project Website</a> <a class="btn btn-lg btn-primary display-7" href="https://huggingface.co/spaces/bhushanp/traffic_segmentation" target="_blank">Hugging Face Demo 🤗</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNITH2dSY" id="article04-28">
+	
+
+	
+	<div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/imgseg-unet-arch-1036x690.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Goals</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">Reliability of camera data is affected due to adverse weather conditions like rainfall. Our primary focus is on designing a model that can excel in these challenging scenarios. Our project aims to create a machine learning model capable of <strong>robustly and accurately predicting semantic image labels across the spatial regions within images</strong> taken from an autonomous vehicle camera in rainy weather environments.<br><br>We used multiple image segmentation methods from <strong>GMM to deep learning networks like UNet to see how these can help in segmenting road images in adverse weather conditions</strong>. Our goal was to compare these results and see which best suits our task. We used the <strong>Raidar dataset consisting of 58,542 images of street scenes taken onboard a self-driving car camera. The dataset includes a pair of 14,570 actual rainy images</strong> and their corresponding semantic segmented annotations.
+<br>
+<br><strong>1. Unsupervised Learning: Gaussian Mixture Models (GMM), Hierarchal Clustering (HC)
+<br>2. Supervised Learning: Custom CNN (CNN), Unet&nbsp;</strong><br></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNITHmdbY mbr-parallax-background" id="article04-29">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/imgseg-clusters-400x509.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Work Done</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">It was important to cluster the dataset based on this characteristic to avoid bias and improve model accuracy, and the following methods were explored:<br><strong>1.Classifying based on the average of the HSV V-channel
+<br>2. KMeans algorithm clustering
+</strong><br><br>The first one turned out to be the most reliable indicator of time of day. The mean brightness across the dataset was calculated and used as the threshold for grouping the images.
+<br><br>We chose to employ two distinct methods to segment the images in our dataset; GMM and Hierarchical clustering. These algorithms <strong>cluster data points from the images</strong> based on their distance in the RGB color channel space. This approach facilitates grouping of objects that exhibit similar colors in close proximity to one another. However, the ground truth labels that we intend to use for classification are not segmented based on the RGB color space. In spite of this, we proceeded to attempt image segmentation using both GMM and Hierarchical clustering in order to evaluate their efficacy in this context. To improve the outcomes, we have experimented with several preprocessing methods such as:<br><strong>1. Blurring and normalizing
+<br>2. Adding white noise
+<br>3. Contouring
+<br>4. Blob detection</strong><br></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVOUQrPqZU mbr-parallax-background" id="article04-5j">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/imgseg-elbow-381x259.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">For our supervised method we decided to use a <strong>UNet which is a CNN architecture commonly used for image segmentation in medical imaging</strong>. The network first “encodes” the image to extract the features of the input similar to a traditional CNN. Each convolution block consists of a 3x3 convolution, followed by regularization and a ReLu step. This is repeated once more then a maxpool calculation is performed.<br><br>This <strong>encoding step is repeated until the desired depth of the Unet is reached</strong>. The next portion of the network “decodes” the extracted features to create a segmentation map which shows the probability of a pixel belonging to a certain class. The decoder performs deconvolution or upsampling and then concatenates the output with the feature map taken from the output of the encoder at the same layer.&nbsp;&nbsp;<br></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNITHE2sY" id="article04-2a">
+	
+
+	
+	<div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/imgseg-results-527x510.webp" alt="Mobirise Website Builder">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Results</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7"><br>The internal measure based methods that compare intra-cluster distances with inter-cluster distances which we used were:<br><strong>1. Davies-Bouldin Index
+<br>2. Silhouette Coefficient
+<br>3. Beta CV measure
+<br>4. Blob detection
+</strong><br>
+<br>The external measures used were as follows:
+<br>Pairwise:
+<br><strong>1. Rand’s statistic
+<br>2. Jaccard’s coefficient
+</strong><br><br>Entropy based:
+<br><strong>1. Normalized Mutual information</strong><br></p>
+					<div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-7" href="https://drive.google.com/file/d/1K_XiRdn5e8OseCZmlzuz1r243Iae1QLX/view" target="_blank">Hugging Face Demo 🤗</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery5 mbr-gallery cid-tVOVWgB33Q" id="gallery5-5k">
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(250, 250, 250);">
+    </div>
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-4"></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">Our calculation metrics were most consistent with the Silhouette Coefficient and Beta CV and based on that, the preprocessing techniques that performed the worst were contouring and blob detection. Surprisingly, <strong>clustering the original image without any preprocessing performed the best followed closely by the image that we preprocessed by blurring and normalizing.</strong> The images can be viewed below.
+<div><br></div><div>As can be seen in the images below, the customized <strong>FCN for individual pixel classification did not perform as well as the UNet method.
+</strong></div><div><br></div><div>Next, we compare the common evaluation measures Davies Bouldin Index, Silhouette Coefficient, Beta CV measure for similar images to see how well the CNN did in comparison to Gaussian Mixture Models and Hierarchical Clustering. Higher values represent better performance. <strong>As can be clearly seen, well optimized neural networks like UNet do far better than simple clustering algorithms like GMM</strong>. This is because of the complexity that these models have in comparison. This can be attributed to the fact that UNet has been optimized over years of research and thus is far superior to the basic FCN used by us. Specifically, the “decoding” step of the UNet and incorporation of skip steps allows for a more robust output segmented output of the image.&nbsp;</div><div>
+</div><div>
+</div></h4>
+        </div>
+        <div class="row mbr-gallery mt-4">
+            
+            <div class="col-12 col-md-6 col-lg-6 item gallery-image active">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDkFcn-modal" data-bs-target="#umHADDkFcn-modal">
+                    <img class="w-100" src="assets/images/imgseg-unet-bs-743x667.webp" alt="" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-umHADDkFcn" data-bs-target="#lb-umHADDkFcn">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Unet results</h6>
+            </div><div class="col-12 col-md-6 col-lg-6 item gallery-image active">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDkFcn-modal" data-bs-target="#umHADDkFcn-modal">
+                    <img class="w-100" src="assets/images/demo2.gif" alt="" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-umHADDkFcn" data-bs-target="#lb-umHADDkFcn">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Custom CNN results</h6>
+            </div>
+            
+            
+        </div>
+
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="umHADDkFcn-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel slide carousel-fade" id="lb-umHADDkFcn" data-interval="5000" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/images/imgseg-unet-bs-743x667.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/demo2.gif" alt="Mobirise Website Builder">
+                                </div>
+                                
+                                
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-umHADDkFcn" data-bs-target="#lb-umHADDkFcn"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#lb-umHADDkFcn" data-bs-target="#lb-umHADDkFcn"></li>
+                                
+                                
+                                
+                            </ol>
+                            <a role="button" href="" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                            </a>
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-umHADDkFcn">
+                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="#lb-umHADDkFcn">
+                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery5 mbr-gallery cid-tVOX8eg17E" id="gallery5-5l">
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(250, 250, 250);">
+    </div>
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-4"></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7"></h4>
+        </div>
+        <div class="row mbr-gallery mt-4">
+            
+            <div class="col-12 col-md-6 col-lg-4 item gallery-image active">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDIhdC-modal" data-bs-target="#umHADDIhdC-modal">
+                    <img class="w-100" src="assets/images/imgseg-results-orig-332x196.webp" alt="" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Original</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDIhdC-modal" data-bs-target="#umHADDIhdC-modal">
+                    <img class="w-100" src="assets/images/imgseg-np-gmm-202x113.webp" alt="" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">GMM (No preprocessing)</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDIhdC-modal" data-bs-target="#umHADDIhdC-modal">
+                    <img class="w-100" src="assets/images/imgseg-np-hc-202x114.webp" alt="" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">HC (No preprocessing)</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDIhdC-modal" data-bs-target="#umHADDIhdC-modal">
+                    <img class="w-100" src="assets/images/imgseg-results-orig-332x196.webp" alt="" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">HC (No preprocessing)</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDIhdC-modal" data-bs-target="#umHADDIhdC-modal">
+                    <img class="w-100" src="assets/images/imgseg-bn-gmm-202x114.webp" alt="" data-slide-to="4" data-bs-slide-to="4" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">GMM (Blurring and Normalized)</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHADDIhdC-modal" data-bs-target="#umHADDIhdC-modal">
+                    <img class="w-100" src="assets/images/imgseg-bn-hc-202x114.webp" alt="" data-slide-to="5" data-bs-slide-to="5" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">HC (Blurring and Normalized)</h6>
+            </div>
+            
+            
+        </div>
+
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="umHADDIhdC-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel slide carousel-fade" id="lb-umHADDIhdC" data-interval="5000" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/images/imgseg-results-orig-332x196.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/imgseg-np-gmm-202x113.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/imgseg-np-hc-202x114.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/imgseg-results-orig-332x196.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/imgseg-bn-gmm-202x114.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/imgseg-bn-hc-202x114.webp" alt="Mobirise Website Builder">
+                                </div>
+                                
+                                
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC"></li><li data-slide-to="2" data-bs-slide-to="2" class="" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC"></li><li data-slide-to="3" data-bs-slide-to="3" class="" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC"></li><li data-slide-to="4" data-bs-slide-to="4" class="" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC"></li><li data-slide-to="5" data-bs-slide-to="5" class="" data-target="#lb-umHADDIhdC" data-bs-target="#lb-umHADDIhdC"></li>
+                                
+                                
+                                
+                            </ol>
+                            <a role="button" href="" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                            </a>
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-umHADDIhdC">
+                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="#lb-umHADDIhdC">
+                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts2 cid-tVNITHV063" id="contacts2-2b">
+    <!---->
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Contact me!</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="image-wrapper">
+                        <span class="mbr-iconfont socicon-linkedin socicon"></span>
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                            <strong>Linkedin</strong>
+                        </h6>
+                        <p class="mbr-text mbr-fonts-style display-7"><a href="http://linkedin.com/in/bhushan-p " class="text-primary">linkedin.com/in/bhushan-p&nbsp;</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="image-wrapper">
+                        <span class="mbr-iconfont socicon-github socicon"></span>
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                            <strong>Github</strong></h6>
+                        <p class="mbr-text mbr-fonts-style display-7"><a href="http://github.com/bhushanap" class="text-primary" target="_blank">github.com/bhushanap</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-tVNITIhGVF" once="footers" id="footer7-2c">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-4"></p><p>📞<a href="tel:+1-404-3883944" class="text-white">(404) 388-3944</a>&nbsp;&nbsp;&nbsp;&nbsp;📍Atlanta, GA, 30309&nbsp; &nbsp;📧<a href="mailto:bhushan.pawaskar@hotmail.com" class="text-white">bhushan.pawaskar@hotmail.com</a><br><br>© Copyright 2023 Bhushan Pawaskar - All Rights Reserved
+                </p><p></p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
+</html>

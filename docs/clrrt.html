@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.9.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.6, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="assets/images/clrrt-meta.png">
+  <meta property="og:image" content="assets/images/clrrt-meta.png">
+  <meta name="twitter:title" content="Truck-Trailer CLRRT">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-128x109.png" type="image/x-icon">
+  <meta name="description" content="Portfolio:
+I am Bhushan. – a robotics graduate student currently pursuing my master's degree at Georgia Tech! 🐝
+This is a short overview of my work implementing CL-RRT for truck trailer system">
+  
+  
+  <title>Truck-Trailer CLRRT</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-tVNIcxroeS" once="menu" id="menu2-1l">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-7" href="index.html">Bhushan Pawaskar<br></a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle display-4" href="about.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">About</a><div class="dropdown-menu" aria-labelledby="dropdown-613"><a class="text-black text-primary dropdown-item display-4" href="about.html#header11-l">Intro</a><a class="text-black text-primary dropdown-item display-4" href="about.html#pricing2-w">Skills</a><a class="text-black text-primary dropdown-item display-4" href="about.html#timeline3-s">Education</a></div></li><li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle show display-4" href="projects.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects</a><div class="dropdown-menu show" aria-labelledby="dropdown-358" data-bs-popper="none"><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-15">Computer Vision</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-16">Control &amp; Planning</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider04-14">Live Demos</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-17">Mechanical</a><a class="text-black text-primary dropdown-item display-4" href="projects.html#slider4-10">Miscellaneous</a></div></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNIcxO0XK mbr-parallax-background" id="article04-1m">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/clrrt-run1.gif" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Introduction</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">Truck-trailer systems are widely used in various industries for transporting goods. These systems have to function in dynamic warehouse environments and require accurate and efficient planning to ensure a safe operation. But, <strong>due to the nonlinear dynamics of the system, traditional motion planning methods may not be suitable for generating feasible paths in real- time</strong>. This project proposes the use of a sampling-based motion planning algorithm for a truck trailer system.&nbsp;<br><br><strong>Closed Loop RRT (CL-RRT) is one such popular alogirthm that was first introduced for team MIT’s entry vehicle</strong> for the 2007 DARPA Urban Challenge, Talos. For the competition, their team needed to develop an algorithm that was efficient, real-time and could dynamically re-plan with changing obstacles in the environment.<br></p>
+					<div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-7" href="assets/files/Closed_Loop_RRT_for_Truck_Trailer_System.pdf" target="_blank"><span class="mobi-mbri mobi-mbri-file mbr-iconfont mbr-iconfont-btn"></span>Project Report</a> <a class="btn btn-lg btn-primary display-7" href="assets/demo/truck/truck.html" target="_blank">Demo: Truck-Trailer (inaccurate dynamics)</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNIcy84WW" id="article04-1n">
+	
+
+	
+	<div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/clrrt-goals-436x467.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Goals</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">This project uses Closed Loop Rapidly Exploring Random Tree (CL-RRT) <strong>to generate collision-free paths for the truck-trailer system while performing U-turn maneuver in compact spaces.</strong> This project explores the challenges faced in the implementation of such an algorithm on a non-holonomic system. The effectiveness of the proposed method has been shown through experiments in simulation. The <strong>results show that several performance benefits can be obtained</strong> and the proposed approach can prove to be a promising solution for real-time path planning while ensuring the kino-dynamic constraints are satisfied.<br><br>The algorithm requires a <strong>hierarchical structure for planning. A low level controller to execute actions</strong>. These action samples are fed back into the high level planner to determine a path plan. The implementation in this project uses the following:
+<br>
+<br><strong>1. Pure Pursuit controller for lateral control
+<br>2. PID controller for longitudinal control
+<br>3. LQR controller for stabilizing dynamics&nbsp;</strong><br></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNIcyqaxp mbr-parallax-background" id="article04-1o">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/clrrt-wd-1036x792.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Work Done</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7">Initially, the vehicle dynamics was modeled in <strong>Javascript for quick and easy visualization, but due to limited vectorization, Matlab was used with C++ modules.</strong> The truck trailer model was made as per the following dynamics equations shown below. Also, for the <strong>algorithm to work, the low level controller needs to be self stabilizing.</strong> While pure pursuit controller is stable in forward kinematics, it diverges in reverse motion. So a <strong>LQR controller was used to stabilize the angle Beta </strong>between the truck and trailer.<br>
+<br>RRT based algorithms require an estimate of the distance. Normally the L2 norm is used for the distance function. But this is not feasible as a vehicle would take a longer path. <strong>A dubin's path could be used but that fails for a complex truck-trailer model.</strong> Thus, a <strong>lookup table for the cost function is used in this version.</strong> This helped speed up the forward passes for cost heuristics estimated by the planner.<br>
+<br>CL-RRT runs simultaneously as the previously calculated trajectories are being executed. It also <strong>retains the generated trees and reuses them to save on computation. </strong>In this project however, simulating the dynamics on a laptop processor was computationally intensive. So the process of <strong>planning could not be run in parallel with the simulation.&nbsp;</strong><br></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery5 mbr-gallery cid-tVOAUmq29O" id="gallery5-5e">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-4"></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5"></h4>
+        </div>
+        <div class="row mbr-gallery mt-4">
+            
+            <div class="col-12 col-md-6 col-lg-6 item gallery-image active">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZiYHO-modal" data-bs-target="#umHACZiYHO-modal">
+                    <img class="w-100" src="assets/images/clrrt-cost-616x602.webp" alt="" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-umHACZiYHO" data-bs-target="#lb-umHACZiYHO">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Cost function</h6>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZiYHO-modal" data-bs-target="#umHACZiYHO-modal">
+                    <img class="w-100" src="assets/images/clrrt-serial-993x463.webp" alt="" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-umHACZiYHO" data-bs-target="#lb-umHACZiYHO">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Serial vs dynamic replanning</h6>
+            </div>
+            
+        </div>
+
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="umHACZiYHO-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel slide carousel-fade" id="lb-umHACZiYHO" data-interval="5000" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/images/clrrt-cost-616x602.webp" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/clrrt-serial-993x463.webp" alt="Mobirise Website Builder">
+                                </div>
+                                
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-umHACZiYHO" data-bs-target="#lb-umHACZiYHO"></li>
+                                <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-umHACZiYHO" data-bs-target="#lb-umHACZiYHO"></li>
+                                
+                                
+                            </ol>
+                            <a role="button" href="" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                            </a>
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-umHACZiYHO">
+                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="#lb-umHACZiYHO">
+                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article4 cid-tVNIcyHdGd" id="article04-1p">
+	
+
+	
+	<div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-5 image-wrapper">
+				<img class="w-100" src="assets/images/clrrt-envs-600x1000.webp" alt="">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+						<strong>Results</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7"><strong>Two different environments</strong> were used with different start and end goals in each case. This was done to test the algorithm in easy as well as challenging condition. The <strong>first involved a</strong> <strong>straight forward maneuver</strong> which only should involve forward kinematics. The<strong> second environment required the truck to go in reverse,</strong> thus execute non stabilizing dynamics.<br>
+<br>In the first experiment, I ran an iteration of control based RRT to see how much time does the algorithm take to plan and then traverse to its end location. <strong>This was then compared to the CL-RRT timing for the same loop for two different time steps of 8 seconds and 15 seconds respectively</strong>. In the second experiment, points were sampled only from a specific region which might make a left u-turn easier. This was done to <strong>evaluate the effectiveness of smart sampling.</strong> These were sampled from a two regions using variable parameters for radius and theta.<br>
+<br>The <strong>performance of CL-RRT is inconsistent. </strong>However, if lots of samples can be generated to cover most of the sample space, the results become more and more consistent as seen with the smaller test environment. CL-RRT did show some improvements in the time required for planning and execution however the <strong>method is highly dependent on getting the time- step value right.</strong> The optimizations mentioned in sampling did not seem to yield successful results at least in the test environment.<br></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery5 mbr-gallery cid-tVOCJYwFhz" id="gallery5-5f">
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(250, 250, 250);">
+    </div>
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-4"></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Results</h4>
+        </div>
+        <div class="row mbr-gallery mt-4">
+            
+            <div class="col-12 col-md-6 col-lg-4 item gallery-image active">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZTIH2-modal" data-bs-target="#umHACZTIH2-modal">
+                    <img class="w-100" src="assets/images/clrrt-results1-1-757x441.webp" alt="" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Total time for both environments</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZTIH2-modal" data-bs-target="#umHACZTIH2-modal">
+                    <img class="w-100" src="assets/images/clrrt-results2-815x456.webp" alt="" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Variation across time step</h6>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZTIH2-modal" data-bs-target="#umHACZTIH2-modal">
+                    <img class="w-100" src="assets/images/clrrt-results3-815x465.webp" alt="" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Variation with sampling strategy</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZTIH2-modal" data-bs-target="#umHACZTIH2-modal">
+                    <img class="w-100" src="assets/images/clrrt-reverse-dynamics.gif" alt="" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Reverse dynamics</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZTIH2-modal" data-bs-target="#umHACZTIH2-modal">
+                    <img class="w-100" src="assets/images/clrrt-run1.gif" alt="" data-slide-to="4" data-bs-slide-to="4" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Test run 1</h6>
+            </div><div class="col-12 col-md-6 col-lg-4 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#umHACZTIH2-modal" data-bs-target="#umHACZTIH2-modal">
+                    <img class="w-100" src="assets/images/clrrt-run2.gif" alt="" data-slide-to="5" data-bs-slide-to="5" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Test run 2</h6>
+            </div>
+            
+        </div>
+
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="umHACZTIH2-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel slide carousel-fade" id="lb-umHACZTIH2" data-interval="5000" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/images/clrrt-results1-1-757x441.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/clrrt-results2-815x456.webp" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/clrrt-results3-815x465.webp" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/clrrt-reverse-dynamics.gif" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/clrrt-run1.gif" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/clrrt-run2.gif" alt="Mobirise Website Builder">
+                                </div>
+                                
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2"></li>
+                                <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2"></li><li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2"></li><li data-slide-to="4" data-bs-slide-to="4" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2"></li><li data-slide-to="5" data-bs-slide-to="5" data-target="#lb-umHACZTIH2" data-bs-target="#lb-umHACZTIH2"></li>
+                                
+                                
+                            </ol>
+                            <a role="button" href="" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                            </a>
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-umHACZTIH2">
+                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="#lb-umHACZTIH2">
+                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts2 cid-tVNIcyY32C" id="contacts2-1q">
+    <!---->
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Contact me!</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="image-wrapper">
+                        <span class="mbr-iconfont socicon-linkedin socicon"></span>
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                            <strong>Linkedin</strong>
+                        </h6>
+                        <p class="mbr-text mbr-fonts-style display-7"><a href="http://linkedin.com/in/bhushan-p " class="text-primary">linkedin.com/in/bhushan-p&nbsp;</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="image-wrapper">
+                        <span class="mbr-iconfont socicon-github socicon"></span>
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                            <strong>Github</strong></h6>
+                        <p class="mbr-text mbr-fonts-style display-7"><a href="http://github.com/bhushanap" class="text-primary" target="_blank">github.com/bhushanap</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-tVNIczmlIl" once="footers" id="footer7-1r">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-4"></p><p>📞<a href="tel:+1-404-3883944" class="text-white">(404) 388-3944</a>&nbsp;&nbsp;&nbsp;&nbsp;📍Atlanta, GA, 30309&nbsp; &nbsp;📧<a href="mailto:bhushan.pawaskar@hotmail.com" class="text-white">bhushan.pawaskar@hotmail.com</a><br><br>© Copyright 2023 Bhushan Pawaskar - All Rights Reserved
+                </p><p></p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/html-builder.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
+</html>

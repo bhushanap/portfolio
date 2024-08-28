@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="files/style.css">
+    <title>Isolation</title>
+</head>
+<body>
+    <canvas id="boardCanvas"></canvas> 
+    <a id="info"><p>Game of Isolation</p></a> 
+    <p>Drag and adjust the grid size and AI difficulty. Choose your choice of parameters and run!</p>
+    <div class="slider-container">
+        <div>
+            <span>Grid size: </span>
+            <input type="range" id="colSlider" min="4" max="10" value="6">
+            <span id="colValue">6</span>
+        </div>
+    
+        <div id="nodeContainer">
+            <span title="Speed v/s Difficulty">Search tree nodes: </span>
+            <input type="range" id="nodeSlider" min="10000" max="1000000" value="120000">
+            <span id="nodeValue">120000</span>
+        </div>
+    </div>
+    
+    <div class="selectContainer">
+        <div>
+            <span>v/s AI or player?:</span>
+            <select id="gameSelector">
+                <option value="AI">AI</option>
+                <option value="Player">Player</option>
+            </select>
+        </div>
+        <div>
+            <span id="firstTSelector">AI to go first?:</span>
+            <select id="firstSelector">
+                <option value="AI">AI first</option>
+                <option value="Player">AI second</option>
+            </select>
+        </div>
+        <button id="runButton">Run</button>
+    </div>
+    
+  
+  
+    <script src="files/tree.js"></script>
+    <script src="files/queen.js"></script>
+    <script src="files/minimax.js"></script>
+    <script src="files/utils.js"></script>
+    <script src="files/board.js"></script>
+    <script src="files/main.js"></script>
+</body>
